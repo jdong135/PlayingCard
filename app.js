@@ -27,12 +27,12 @@ function generateFaceCard(value, suit, symbol) {
     else if(value == 12) {
         header.innerHTML = "Q <br>" + symbol;
         img_div.innerHTML = "<img src='queen.gif'/>";
-        footer.innerHTML = "J <br>" + symbol;
+        footer.innerHTML = "Q <br>" + symbol;
     }
     else if(value == 13) {
         header.innerHTML = "K <br>" + symbol;
         img_div.innerHTML = "<img src='king.gif'/>";
-        footer.innerHTML = "J <br>" + symbol;
+        footer.innerHTML = "K <br>" + symbol;
     }
     card.appendChild(header);
     card.appendChild(img_div);
