@@ -1,0 +1,104 @@
+:root{
+	--card-width: 172px;
+	--card-height: 240px;
+	--card-color-red: #e44145;
+	--card-color-black: #252525;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.card {
+	width: var(--card-width);
+	height: var(--card-height);
+	font-family: 'Trebuchet MS';
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+}
+
+.heart, .diamond {
+	color: var(--card-color-red);
+}
+.spade, .club {
+	color: var(--card-color-black);
+}
+.symbol_container {
+	position: relative;
+	top: -15px;
+	padding: 5px;
+	line-height: 25px;
+}
+.vertical_section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.horizontal_section {
+	/*font-size: 25px;*/
+	text-align: center;
+	flex-basis: 33.333%;
+}
+
+.vertical_2-6_section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-basis: 20%;
+}
+
+.horizontal_2-6_section {
+	text-align: center;
+	flex-basis: 33.333%;
+}
+
+.card_header {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.card_header p {
+	line-height: 20px;
+	margin: 0;
+}
+.card_footer {
+	position: relative;
+	bottom: 30px;
+	margin-right: 5px;
+	transform: rotate(180deg);
+}
+.card_footer p {
+	line-height: 20px;
+	margin: 0;
+}
+
+.face_card_header {
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.face_card_footer {
+	transform: rotate(180deg);
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.face_card_image {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	top: 10%;
+}
+
+.face_card_image img {
+	height: 100%;
+}
