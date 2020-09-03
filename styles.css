@@ -63,19 +63,12 @@ body {
 	margin-left: 5px;
 	margin-top: 5px;
 }
-.card_header p {
-	line-height: 20px;
-	margin: 0;
-}
+
 .card_footer {
 	position: relative;
 	bottom: 30px;
 	margin-right: 5px;
 	transform: rotate(180deg);
-}
-.card_footer p {
-	line-height: 20px;
-	margin: 0;
 }
 
 .face_card_header {
